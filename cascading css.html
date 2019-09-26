@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--cascading adalah style yang dapat menimpa aau ditimpa oleh style lain sesuai urutannya dan bisa juga disebut PRIORITAS CSS-->
+            <title>Contoh Kasus Cascading</title>
+            <link rel="stylesheet" type="text/css" href="prioritas.css">
+            <style type="text/css">
+                h2{/*code ini berfungsi untuk mewarnai setiap tag <h2>*/
+                    color:red;
+                }
+            </style>
+    </head>
+    <body>
+        <h2>
+            akan berwarna apa saya?..1
+        </h2>
+        <h2 style="color: green">
+            akan  berwarna apa ya cuy?..2
+        </h2>
+    </body>
+    <!--dalam kasus ini semua selector ingin mengubah warna text tag <h2>,tetapi hanya ada 1 kode yang menang -->
+        </html>

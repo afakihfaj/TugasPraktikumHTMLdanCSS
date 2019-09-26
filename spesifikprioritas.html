@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kasus Sepsifik Prioritas & !important</title>
+        <style type="text/css">
+        p {
+            color:red !Important;/*saat page load,warna tag <p> yang berisi "Sedang Belajar CSS" menjadi merah sebab perintah important akan mengambil alih urutan prioritas CSS*/
+        }
+        div p{
+            color:green;
+        }
+        #aaa{/*jika tidak ada perintah important,warna yang ditampilkan saat page load adalah warna orange sebab selector # memiliki nilai yang tinggi yaitu 0,1,0,0 lebih tinggi dari selector lainnya*/
+            color:orange;
+        }
+        body div p{
+            color:yellow;
+        }
+        div p.kalimat{
+            color:silver;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p id="aaa">
+                Sedang Belajar CSS..
+            </p>
+        </div>
+    </body>
+</html>

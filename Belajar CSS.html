@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar CSS</title>
+        <!--Menggunakan internal CSS karena digunakan di dalam tag <head>-->
+        
+        <style type="text/css">
+        h2 , h3 {/*ketika page load value yang terdapat pada tag h2,h3 akan warna biru*/
+            color: blue;
+        }
+        p strong { /*ketika page load,isi yang terdapat pada tag p strong akan warna merah*/
+            color:red;
+        }
+        h2 , judul , .paragraf{ /*ketika page load value yang terdapat pada tag h2, class judul .paragraf akan berfont italic*/
+            font-style: italic;
+        }
+        #belajar_html, p#belajar_css, h3.subheader {
+            font-size: 14pt;
+        }
+        /*<!--Sesuai dengan namanya, selector digunakan untuk mencari bagian web yang ingin dimodifikasi atau yang ingin di-style. Misalnya : “cari seluruh tag <p>”, atau “cari seluruh tag HTML yang memiliki atribut class=”warning”” atau “cari seluruh link yang ada di dalam tag <p>”. -->*/
+        * {    
+        color: blue;    background-color: white;   /*menggunakan Universal selector yang fungsinya untuk mecari semua tag yang ada */
+        } 
+
+        </style>
+    </head>
+    <body>
+        <h2 class="judul">Belajar CSS</h2>
+        <p>ini <strong>adalah sebuah <em>paragraf</em></strong></p>
+        <p id="belajar_html" class="paragraf">Saya sedang belajar HTML dari <a href="http://www.jti.polije.com" target="_blank">JTI Polije akan terbuka di tab baru</a></p>
+        <p id="belajar_css" class="paragraf">Saya Sedang Belajar CSS mohon jangan diganggu</p>
+        <br />
+        
+        <h3 class="judul subheader">Daftar Belanjaan</h3>
+        <ol>
+            <li>Minyak Goreng</li>
+            <li>Sabun Mandi</li>
+            <li>deterjen</li>
+            <li>Shampoo</li>
+            <li>Obat Nyamuk</li>
+        </ol>
+   
+    
+ 
+   
+   
+    </body>
+</html>

@@ -1,0 +1,35 @@
+/*CSS digunakan untuk mempercantik/memperbagus tampilan halaman html*/
+/* ada 3 cara menginput kode CSS ke dalam HTML yaitu medtode Inline Style,Internal Style Sheets, dan External Style Sheets*/
+body 
+{
+text-align: center;
+}
+/*# digunakan untuk mencari tag yang menggunakan id tersebut,sedangkan . digunakan pada class selector*/
+#header {
+border: 1px solid red;
+}
+#menu {
+border: 1px solid blue;
+}
+#menu li, #sidebar li {
+list-style: none;/*berfungsi untuk menghilangkan symbol yang terdapat dalam list*/
+}
+#content {
+width: 59%;
+float: left;
+border: 1px solid yellow;
+}
+#sidebar {
+border: 1px solid green;
+float: left;
+width: 40%;
+}
+
+#footer {
+width: 100%;
+border: 1px solid black;
+float: left;
+}
+h2{
+    color: red;
+}

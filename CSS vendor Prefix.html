@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <!--Vendor prefix adalah sebutan untuk penambahan beberapa karakter khusus di awal penulisan property-->
+    <!--Vendor prefix ditambahkan di awal penulisan property, sesuai dengan inisial web browser-->
+    <!--Dalam penggunaanya, vendor prefixes akan ditulis yang pertama, apapun urutannya dan kemudian diikuti penulisan property CSS normal-->
+    <head>
+        <title> </title>
+      <style>
+#gradredyellow {
+    height: 150px;
+    background-image: -moz-linear-gradient(red, yellow);
+    background-image: -o-linear-gradient(red, yellow);
+    background-image: -ms-linear-gradient(red, yellow);
+    background-image: -webkit-linear-gradient(red, yellow);
+    /* Penulisan CSS normal tanpa vendor prefixes */
+    background-image: linear-gradient(red, yellow);
+}
+</style>
+    </head>
+    <body>
+        <h1>Vendor Prefixes</h1>
+        <p>Menggunakan -moz- , -o-, -ms dan -webkit- di CSS.</p>
+        <div id="gradredyellow"></div>
+    </body>
+</html>
