@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Form</title>
+    </head>
+    <body>
+        <!--form action digunakan untuk melakukan aksi dengan memanggil form itu sendiri untuk di load lagi ketika semua data yang terisi dalam form tersebut telah tersubmit-->
+        <!--method="get" digunakan untuk mengirim data ke server dengan cara meletakan data pada bagian akhir dari Url yang dituju. Method sendiri berfungsi mengirimkan data ke tujuan
+        -->
+    <form action="form.html" method="GET">
+        Nama : <br> 
+         <!--tag Input type="text" digunakan untuk melakukan inputan dan menerima inputan berupa text -->
+        <input type="text" name="nama" value="" autofocus/><!--fungsi auto focus pada field auto focus yaitu ketika halaman di muat/page load,cursor otomatis berada pada field nama-->
+        <br />
+
+        Password : <br> 
+         <!--tag Input type="password" digunakan untuk melakukan inputan yang sensitif seperti password karena input yang dimasukkan nantiya akan berubah tampilan menjadi symbol seperti bintang,bulat.-->
+        <input type="password" name="password"/><br>
+
+        Jenis Kelamin :<br>
+        <!--Input type="radio" digunakan agar user dapat memilih sesuatu seperti jenis kelamin dan user hanya bisa memilih 1 opsi dari isi dari radio button tersebut(misal jenis kelamin) -->
+        <input type="radio" name="jenis_kelamin" value="laki-laki" checked/>
+        laki-laki
+        <input type="radio" name="jenis_kelamin" value="perempuan"/> Perempuan
+        <br />
+
+        Hobi : <input type="checkbox" name="hobi_baca" /> Membaca Buku<!--input type="checkbox" adalah inputan checkbox yang dapat di ceklist/centang oleh user dan user dapat memilih lebih dari opsi yang terdapat dalam isi checkbox tersebut,lain hal dengan radio button yang hanya dapat memilih 1 opsi-->
+                <input type="checkbox" name="hobi_nulis" />Menulis
+                <input type="checkbox" name="hobi_mancing" /> Memancing
+                <br />
+        Asal Kota :
+            <select name="asal_kota"> <!--tag select digunakan untuk inputan yang sudah ada nilainya dan user hanya dapat memilih dari nilai yang ada dalam inputan tag selectnya-->
+                <!--option ini merupakan value/opsi/pilihan dari tag select-->
+                <option value="Kota Situbondo">Situbondo</option>
+                <option>Bandung</option>
+                <option value="kota semarang" selected>Semarang</option>
+            </select>
+            <br />
+            Silahkan Komentar disini :<br>
+            <!-- tag textarea sama fungsinya dengan input type text biasa saja,hanya saja tag textarea cangkupannya lebih besar dan dapat terdiri dari beberapa baris-->
+            <textarea name="Silahkan Komentar Disini" rows="5" cols="40"> 
+Silahkan Komentar Disini
+            </textarea>
+            <br />
+
+            <input type="submit" value="Mulai Proses"><!--input type="submit" digunakan untuk menampilkan tombol untuk memproses form-->
+            <input type="search" value="Cari">
+        </form>
+    </body>
+</html>
